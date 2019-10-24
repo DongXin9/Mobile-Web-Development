@@ -4,13 +4,37 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ShowTime from './ShowTime';
 import Todolist from './Todolist/Todolist';
+import Todo from './Todo/Todolist';
 import Request from './Request';
+import Parent from './Context/Parent';
+import Hoc from './Hoc/Hoc';
+import Portals from './Portals/Portals';
+import App from './App';
 //组件交互
 //父组件--->子组件：调用时在子组件上添加属性
-//在子组件中上通过propscd获取数据
+//在子组件中上通过props获取数据
 // ReactDOM.render(<ShowTime word="react"/>,document.getElementById('root'));
-// ReactDOM.render(<Todolist/>,document.getElementById('root'));
-ReactDOM.render(<Request/>,document.getElementById('root'));
+
+// let {Provider,Comsumer} = React.createContext();
+import {con} from './Context/Context'
+import ParentPortal from './Portals/ParentPortal';
+//let color = 'red';
+// ReactDOM.render(
+//     <con.Provider value={color}>
+//         <ParentPortal/>
+//     </con.Provider>,
+//     document.getElementById('root')
+// );
+// ReactDOM.render(
+//     <App />,
+//     document.getElementById('root')
+// );
+ReactDOM.render(
+    <Todo/>,
+    document.getElementById('root')
+);
+
+
 
 // var str = 'hello';
 // var ele = <h1>{str}</h1>;
