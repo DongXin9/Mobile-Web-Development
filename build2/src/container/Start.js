@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Start extends Component {
-    render() {
+export default function Start(props) {
+    function Home(){
+        props.history.push('/');
+    }
         return (
             <div>
             <div className="contentheader">
-                <div className="t"><a href="/">主页</a><span>/&nbsp;Node.js 新手入门</span></div>
+                <div className="t"><a onClick={Home}>主页</a><span>/&nbsp;Node.js 新手入门</span></div>
             </div>
             <div class='topic'>
                 <h2>Node.js 入门</h2>
@@ -38,5 +40,5 @@ export default class Start extends Component {
                 </div>
             </div>
         )
-    }
+    
 }

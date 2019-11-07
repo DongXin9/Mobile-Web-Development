@@ -6,7 +6,7 @@ export default function Login(props){
     return(
         <div>
         <div className="contentheader">
-            <div className="t"><a href="/">主页</a><span>/&nbsp;登录</span></div>
+            <div className="t"><a onClick={login}>主页</a><span>/&nbsp;登录</span></div>
         </div>
         <div className="Login">    
             <p>

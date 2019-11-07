@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class About extends Component {
-    render() {
+export default function Start(props) {
+    function Home(){
+        props.history.push('/');
+    }
         return (
             <div>
                 <div className="contentheader">
-                    <div className="t"><a href="/">主页</a><span>/&nbsp;关于</span></div>
+                    <div className="t"><a onClick={Home}>主页</a><span>/&nbsp;关于</span></div>
                 </div>
                 
                 <div class='inner topic'>
@@ -63,5 +65,5 @@ export default class About extends Component {
             </div>
             
         )
-    }
+    
 }
