@@ -54,10 +54,15 @@ export default class Apphome extends Component {
                   }   
                 </Flex>
                 </div>
-                <div style={{marginTop:'10px'}}>
-                    <div style={{borderLeft:'#3fcccb 5px solid',marginTop:'10px',marginBottom:'10px'}}><span style={{paddingLeft:'10px'}}>热门推荐</span></div>
-                    <div style={{background:'url(images/3-0.jpg)',width:'100%',height:'200px',textAlign:'center',marginTop:'10px'}}><span style={{lineHeight:'370px',color:'#fff'}}>什么是英伦装修风格 英伦风家装 英伦风格装修效果图</span></div>
-                </div>
+                {
+                  [0,0,0].map((item)=>(
+                    <div style={{marginTop:'10px'}}>
+                      <div style={{borderLeft:'#3fcccb 5px solid',marginTop:'10px',marginBottom:'10px'}}><span style={{paddingLeft:'10px'}}>热门推荐</span></div>
+                      <div style={{background:`url(images/3-${item}.jpg)`,width:'100%',height:'200px',textAlign:'center',marginTop:'10px'}}><span style={{lineHeight:'370px',color:'#fff'}}>什么是英伦装修风格 英伦风家装 英伦风格装修效果图</span></div>
+                    </div>
+                  ))
+                }
+                
           </div>
         );
       }

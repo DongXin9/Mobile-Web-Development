@@ -72,10 +72,10 @@ export default class Appstore extends Component {
                     <Flex>
                         {
                             [0,1].map((item)=>(
-                                <div style={{width:'50%',marginLeft:'1%',marginRight:'1%'}}>
+                                <div style={{width:'48%',marginLeft:'1%',marginRight:'1%'}}>
                                     <div style={{height:'100px',width:'100%',textAlign:'center',backgroundColor:'#fff'}}><img style={{height:'90%',paddingTop:'10px'}} src={`images/`+a[item]+`.png`}/></div>
                                     <div style={{}}>
-                                        <span style={{fontSize:'12px',color:'#686868'}}>{b[item]}</span>
+                                        <span style={{fontSize:'11px',color:'#686868'}}>{b[item]}</span>
                                         <br/>
                                         <span style={{fontSize:'13px'}}>{c[item]}</span>
                                     </div>
@@ -84,6 +84,7 @@ export default class Appstore extends Component {
                         }
                     </Flex>
                     <img src='images/bed.png' style={{width:'100%',marginTop:'15px',backgroundColor:'#fff'}}/>
+                    
                 </div>
             </div>
         )
